@@ -1,0 +1,28 @@
+@tailwind base;
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap');
+html { font-family: 'Karla', sans-serif; }
+
+a {
+  @apply text-orange-800 font-bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  @apply text-6xl font-bold text-gray-800;
+}
+
+h2 {
+  @apply text-5xl font-bold text-gray-800 leading-tight;
+}
+
+p {
+  @apply text-gray-700 mt-8;
+}
+
+
+@tailwind components;
+@tailwind utilities;
