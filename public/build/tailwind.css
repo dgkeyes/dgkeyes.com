@@ -597,8 +597,7 @@ video {
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap');
 
-html { font-family: 'Karla', sans-serif;
-}
+/* html { font-family: 'Karla', sans-serif; } */
 
 a {
   --text-opacity: 1;
@@ -609,6 +608,10 @@ a {
 
 html {
   scroll-behavior: smooth;
+}
+
+html {
+  font-family: Karla, sans-serif
 }
 
 h1 {
@@ -6663,6 +6666,14 @@ p {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-body {
+  font-family: Karla, sans-serif;
+}
+
+.font-display {
+  font-family: Karla, sans-serif;
 }
 
 .font-hairline {
@@ -25643,6 +25654,14 @@ p {
 
   .sm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-body {
+    font-family: Karla, sans-serif;
+  }
+
+  .sm\:font-display {
+    font-family: Karla, sans-serif;
   }
 
   .sm\:font-hairline {
@@ -44626,6 +44645,14 @@ p {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-body {
+    font-family: Karla, sans-serif;
+  }
+
+  .md\:font-display {
+    font-family: Karla, sans-serif;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -63607,6 +63634,14 @@ p {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-body {
+    font-family: Karla, sans-serif;
+  }
+
+  .lg\:font-display {
+    font-family: Karla, sans-serif;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -82586,6 +82621,14 @@ p {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-body {
+    font-family: Karla, sans-serif;
+  }
+
+  .xl\:font-display {
+    font-family: Karla, sans-serif;
   }
 
   .xl\:font-hairline {
