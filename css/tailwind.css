@@ -12,7 +12,7 @@ html {
 }
 
 html {
-  @apply font-body
+  @apply font-body;
 }
 
 h1 {

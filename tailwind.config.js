@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         body: ['Karla', 'sans-serif'],
-      display: ['Karla', 'sans-serif']
+        display: ['Karla', 'sans-serif']
       }
     }
   },
