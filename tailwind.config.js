@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Karla', 'sans-serif'],
-        display: ['Karla', 'sans-serif']
+        'body': ['Karla', 'sans-serif'],
+        'display': ['Karla', 'sans-serif']
       }
     }
   },
