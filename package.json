@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/dgkeyes/dgkeyes.com",
   "dependencies": {
-    "autoprefixer": "^9.6.1",
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
     "postcss-cli": "^6.1.2",
-    "tailwindcss": "^1.0.4"
+    "tailwindcss": "^2.0.3"
   }
 }
