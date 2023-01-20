@@ -15,5 +15,5 @@ data:
     -
       id: quhNUtBn
       name: Email
-      url: david@rfortherestofus.com
+      url: 'mailto:david@rfortherestofus.com'
       icon: site/social-icons/email.svg
