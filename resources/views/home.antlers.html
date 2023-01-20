@@ -2,20 +2,16 @@
     <article class="content">
         <h1>{{ content }}</h1>
         <p class="leading-9">
-            You probably know me as the founder of <a href="https://rfortherestofus.com">R for the Rest of Us</a>. I love
-            R now, but I had a really hard time learning it. That's why I love
-            helping others avoid the pain I experienced.
+            You probably know me as the founder of
+            <a href="https://rfortherestofus.com">R for the Rest of Us</a>. I
+            love R now, but I had a really hard time learning it. That's why I
+            love helping others avoid the pain I experienced.
         </p>
     </article>
 </div>
 
 <div class="max-w-2xl mx-auto mb-32">
-    {{ collection:articles limit="5" as="articles" }} {{ if no_results }}
-    <h2 class="text-3xl italic tracking-tight">
-        Feel the rhythm! Feel the rhyme! Get on up, it's writing time! Cool
-        writings!
-    </h2>
-    {{ /if }} {{ articles }}
+    {{ collection:articles limit="5" as="articles" }} {{ articles }}
     <div class="mb-16">
         <h2 class="mb-4">
             <a
