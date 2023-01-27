@@ -11,9 +11,9 @@ module.exports = {
         },
         extend: {
             colors: {
-                'teal': '#008483',
-                'teal-light': '#a6d0cf'
-            }
+                'teal': '#6cabdd',
+                'teal-light': '#accfec'
+            },
         }
     },
     plugins: [],
