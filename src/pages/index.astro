@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/landing/Hero.astro";
+import LatestArticles from "../components/entries/LatestArticles.astro";
+const allPosts = await getCollection("posts");
+
+---
+
+
+<BaseLayout>
+  <Hero />
+  
+</BaseLayout>
