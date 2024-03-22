@@ -1,8 +1,0 @@
-name: 'David Keyes'
-super: true
-id: 4f0d7978-c874-4d63-b173-6fba446615d1
-password_hash: $2y$10$pFjOOzASQ29IO3bR/lolWOtV9Hj0fvWW5ODJ1EXBZZY5lx/JW9dWK
-preferences:
-  collections:
-    articles:
-      after_save: continue_editing
