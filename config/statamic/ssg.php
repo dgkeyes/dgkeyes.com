@@ -43,6 +43,7 @@ return [
         public_path('images') => 'images',
         public_path('vendor') => 'vendor',
         public_path('favicon.ico') => 'favicon.ico',
+        public_path('david.jpg') => 'david.jpg',
     ],
 
     'symlinks' => [

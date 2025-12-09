@@ -1,0 +1,183 @@
+<!-- /layout.antlers.html -->
+<!doctype html>
+<html lang="en" class="antialiased scroll-smooth scroll-pt-4">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="preload" as="style" href="https://dgkeyes.com/build/assets/site-CDDP7mOB.css" /><link rel="modulepreload" as="script" href="https://dgkeyes.com/build/assets/site-njSy_FoG.js" /><link rel="modulepreload" as="script" href="https://dgkeyes.com/build/assets/alpinejs-tfXiYlyz.js" /><link rel="modulepreload" as="script" href="https://dgkeyes.com/build/assets/@alpinejs-CRIRwVM7.js" /><link rel="modulepreload" as="script" href="https://dgkeyes.com/build/assets/laravel-precognition-alpine-Cu4K3qMN.js" /><link rel="modulepreload" as="script" href="https://dgkeyes.com/build/assets/laravel-precognition-JrK98svh.js" /><link rel="modulepreload" as="script" href="https://dgkeyes.com/build/assets/axios-CjxB0R_e.js" /><link rel="modulepreload" as="script" href="https://dgkeyes.com/build/assets/lodash-es-DzrphU2f.js" /><link rel="stylesheet" href="https://dgkeyes.com/build/assets/site-CDDP7mOB.css" /><script type="module" src="https://dgkeyes.com/build/assets/site-njSy_FoG.js"></script>
+        <!-- statamic-peak-seo::snippets/_seo.antlers.html -->
+
+<title>
+    
+    
+    
+        Page not found · David Keyes
+    
+</title>
+
+
+
+
+
+
+   
+       <meta name="robots" content="noindex">
+   
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:site_name" content="David Keyes">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://dgkeyes.com/page-not-found">
+
+    <meta property="og:title" content="Page not found">
+
+
+
+
+
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+    
+        <script src="https://cdn.usefathom.com/script.js" site="AVALPYGK" defer></script>
+    
+
+    
+
+    
+
+    
+
+<!-- End: statamic-peak-seo::snippets/_seo.antlers.html -->
+
+        <!-- /snippets/_browser_appearance.antlers.html -->
+
+
+
+
+
+
+
+
+
+<link rel="manifest" href="https://dgkeyes.com/site.webmanifest">
+
+
+
+<!-- End: /snippets/_browser_appearance.antlers.html -->
+
+        
+
+        
+        <noscript>
+            <style>
+                nav.hidden,
+                nav ul [x-cloak],
+                nav ul li ul {
+                    display: block !important;
+                }
+            </style>
+        </noscript>
+    
+    </head>
+    <body class="flex flex-col min-h-screen bg-white selection:bg-primary selection:text-white">
+        
+        
+    
+        <!-- statamic-peak-tools::snippets/_noscript.antlers.html -->
+
+    <noscript>
+        <p class="relative z-50 py-3 px-4 bg-gray-100 border-b border-gray-200 text-center font-bold text-xs text-gray-600">This website requires Javascript for some parts to function properly. Your experience may vary.</p>
+    </noscript>
+
+    
+
+<!-- End: statamic-peak-tools::snippets/_noscript.antlers.html -->
+
+        <!-- statamic-peak-tools::navigation/_skip_links.antlers.html -->
+<div class="z-50 text-sm font-bold text-white [&_a]:fixed [&_a]:px-4 [&_a]:py-2 [&_a]:-translate-y-24 [&_a]:opacity-0 [&_a]:top-4 [&_a]:left-8 [&_a]:bg-primary [&_a:focus]:translate-y-0 [&_a:focus]:opacity-100 [&_a]:outline-primary motion-safe:[&_a]:transition-transform ">
+    
+        <a href="#content">Skip to content</a>
+    
+    
+</div>
+<!-- End: statamic-peak-tools::navigation/_skip_links.antlers.html -->
+
+        <!-- statamic-peak-tools::components/_toolbar.antlers.html -->
+
+<!-- End: statamic-peak-tools::components/_toolbar.antlers.html -->
+
+
+        
+
+
+
+
+<!-- /errors/404.antlers.html -->
+<main class="py-12 md:py-16 lg:py-24 stack-12 md:stack-16 lg:stack-24" id="content">
+    
+    <!-- /page_builder/_article.antlers.html -->
+<section class="fluid-grid ">
+    <!-- /typography/_prose.antlers.html -->
+<article
+    class="
+        prose
+        prose-a:underline
+        prose-a:decoration-primary
+        prose-a:decoration-2
+        prose-a:hover:text-primary
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        contents stack-8
+    "
+>
+    <!-- /components/_text.antlers.html -->
+<div class="span-md">
+    <h1>404 Page not found</h1><p>The page you requested is not available (anymore).</p>
+</div>
+<!-- End: /components/_text.antlers.html -->
+</article>
+<!-- End: /typography/_prose.antlers.html -->
+</section>
+
+<!-- End: /page_builder/_article.antlers.html -->
+
+
+
+</main>
+<!-- End: /errors/404.antlers.html -->
+
+    </body>
+</html>
+<!-- End: /layout.antlers.html -->
