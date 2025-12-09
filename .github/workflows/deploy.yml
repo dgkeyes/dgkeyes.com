@@ -53,6 +53,13 @@ jobs:
           echo "APP_ENV=production" >> .env
           php artisan key:generate
 
+      - name: Clear cache
+        run: |
+          php artisan cache:clear
+          php artisan config:clear
+          php artisan view:clear
+          php artisan statamic:stache:clear
+
       - name: Generate static site
         run: php please ssg:generate
 
