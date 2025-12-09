@@ -1,0 +1,45 @@
+{{#
+    @name Home
+    @desc A minimal, centered homepage layout inspired by lingxi.li
+#}}
+
+<!-- /home.antlers.html -->
+<main class="min-h-screen flex items-center justify-center px-6 bg-[#f9f9f9]" id="content">
+    <div class="max-w-lg w-full">
+        {{# Headshot #}}
+        <img
+            src="https://dgkeyes.com/david.jpg"
+            alt="{{ title }}"
+            class="w-20 h-20 rounded-full object-cover mb-6 grayscale"
+        >
+
+        {{# Name/Title #}}
+        <h1 class="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 mb-4">
+            {{ title }}
+        </h1>
+
+        {{# Bio/Introduction #}}
+        {{ if intro }}
+            <div class="text-sm text-[#999] leading-relaxed mb-6 [&_a]:text-[#999] [&_a]:underline [&_a]:decoration-[#ccc] [&_a]:underline-offset-4 [&_a]:transition-colors [&_a]:duration-200 [&_a:hover]:text-neutral-900 [&_a:hover]:decoration-neutral-900">
+                {{ intro | markdown }}
+            </div>
+        {{ /if }}
+
+        {{# Links Section #}}
+        {{ if links }}
+            <hr class="border-t border-[#e5e5e5] mb-6">
+            <nav class="flex flex-wrap gap-x-4 gap-y-2 text-xs">
+                {{ links }}
+                    <a
+                        href="{{ url }}"
+                        class="text-[#666] hover:text-neutral-900 transition-colors duration-200"
+                        {{ if external }}target="_blank" rel="noopener noreferrer"{{ /if }}
+                    >
+                        {{ label }}
+                    </a>
+                {{ /links }}
+            </nav>
+        {{ /if }}
+    </div>
+</main>
+<!-- End: /home.antlers.html -->

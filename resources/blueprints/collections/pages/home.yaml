@@ -1,0 +1,109 @@
+title: Home
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: General
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              input_type: text
+              localizable: true
+              listable: true
+              display: Title
+              validate:
+                - required
+          -
+            handle: intro
+            field:
+              type: markdown
+              display: Introduction
+              instructions: 'A brief introduction about yourself.'
+              localizable: true
+      -
+        display: Links
+        fields:
+          -
+            handle: links
+            field:
+              type: replicator
+              display: Links
+              instructions: 'Add links to display on the homepage.'
+              collapse: false
+              sets:
+                link:
+                  display: Link
+                  fields:
+                    -
+                      handle: label
+                      field:
+                        type: text
+                        display: Label
+                        validate:
+                          - required
+                    -
+                      handle: url
+                      field:
+                        type: text
+                        display: URL
+                        validate:
+                          - required
+                    -
+                      handle: external
+                      field:
+                        type: toggle
+                        display: 'Open in new tab'
+                        default: false
+  seo:
+    display: SEO
+    sections:
+      -
+        display: Basic
+        instructions: 'Basic SEO settings.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_basic'
+      -
+        display: Advanced
+        instructions: 'Advanced SEO settings.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_advanced'
+      -
+        display: 'Open Graph'
+        instructions: 'Open Graph meta tags for social sharing.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_open_graph'
+      -
+        display: Sitemap
+        instructions: 'Sitemap configuration.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_sitemap'
+      -
+        display: 'JSON-ld Schema'
+        instructions: 'Custom JSON-ld schema objects.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_jsonld'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        display: Meta
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              generate: true
+              listable: hidden
+              display: Slug
+              validate:
+                - required

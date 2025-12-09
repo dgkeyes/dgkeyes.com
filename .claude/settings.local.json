@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(composer create-project:*)",
+      "Bash(php please starter-kit:install studio1902/statamic-peak --clear-site)",
+      "Bash(git init:*)",
+      "Bash(php artisan cache:clear:*)",
+      "Bash(php:*)",
+      "Bash(composer require:*)",
+      "Bash(curl:*)",
+      "Bash(sips:*)"
+    ]
+  }
+}

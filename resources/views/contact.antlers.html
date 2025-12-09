@@ -1,0 +1,29 @@
+{{#
+    @name Contact
+    @desc A simple contact page with email.
+#}}
+
+<!-- /contact.antlers.html -->
+<main class="min-h-screen flex items-center justify-center px-6 bg-[#f9f9f9]" id="content">
+    <div class="max-w-lg w-full">
+        <h1 class="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 mb-4">
+            {{ title }}
+        </h1>
+
+        {{ if intro }}
+            <div class="text-sm text-[#999] leading-relaxed mb-6 [&_a]:text-[#999] [&_a]:underline [&_a]:decoration-[#ccc] [&_a]:underline-offset-4 [&_a]:transition-colors [&_a]:duration-200 [&_a:hover]:text-neutral-900 [&_a:hover]:decoration-neutral-900">
+                {{ intro | markdown }}
+            </div>
+        {{ /if }}
+
+        {{ if email }}
+            <a
+                href="mailto:{{ email }}"
+                class="text-sm text-[#666] hover:text-neutral-900 transition-colors duration-200 underline decoration-[#ccc] hover:decoration-neutral-900 underline-offset-4"
+            >
+                {{ email }}
+            </a>
+        {{ /if }}
+    </div>
+</main>
+<!-- End: /contact.antlers.html -->

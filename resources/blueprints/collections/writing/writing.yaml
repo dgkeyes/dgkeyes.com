@@ -1,0 +1,32 @@
+title: Writing
+tabs:
+  main:
+    display: Main
+    sections:
+      - display: General
+        fields:
+          - handle: title
+            field:
+              type: text
+              required: true
+              input_type: text
+              localizable: true
+              listable: true
+              display: Title
+              validate:
+                - required
+          - handle: date
+            field:
+              type: date
+              required: true
+              listable: true
+              display: Date
+  content:
+    display: Content
+    sections:
+      - display: Body
+        fields:
+          - handle: content
+            field:
+              type: markdown
+              display: Content
