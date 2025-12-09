@@ -1,6 +1,7 @@
 tree:
   -
     entry: home
+    root: true
   -
     entry: writing
   -
