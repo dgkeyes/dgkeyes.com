@@ -2,6 +2,8 @@
 id: home
 blueprint: home
 template: home
+layout: layout_home
+slug: home
 title: "David Keyes"
 intro: "[I help people learn to use R](https://rfortherestofus.com/) and [help organizations communicate more effectively with their data](https://claritydatastudio.com/)."
 links:
