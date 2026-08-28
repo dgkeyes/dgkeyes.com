@@ -1,0 +1,22 @@
+---
+import { formatDate, postUrl, type Post } from '../lib/posts';
+
+interface Props {
+  posts: Post[];
+  /** Which date format to show next to each title */
+  dates?: 'short' | 'medium';
+}
+
+const { posts, dates = 'medium' } = Astro.props;
+---
+
+<ul class="posts">
+  {
+    posts.map((post) => (
+      <li>
+        <a href={postUrl(post)}>{post.data.title}</a>
+        <time datetime={formatDate.iso(post.data.date)}>{formatDate[dates](post.data.date)}</time>
+      </li>
+    ))
+  }
+</ul>
