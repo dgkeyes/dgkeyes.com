@@ -1,7 +1,0 @@
-title: Writing
-template: post
-layout: layout
-revisions: false
-route: "/posts/{slug}"
-sort_dir: desc
-sort_by: date

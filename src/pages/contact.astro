@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import { site } from '../lib/site';
+---
+
+<Base title="Contact" description={`Get in touch with ${site.name}.`} class="page">
+  <SiteHeader />
+  <h1>Contact</h1>
+  <p>Feel free to reach out.</p>
+  <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+</Base>

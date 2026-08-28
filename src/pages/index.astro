@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import PostList from '../components/PostList.astro';
+import { site } from '../lib/site';
+import { getPosts } from '../lib/posts';
+
+const posts = await getPosts();
+const recent = posts.slice(0, site.homePostCount);
+---
+
+<Base class="home">
+  <img class="avatar" src={site.avatar} alt={site.name} width="56" height="56" />
+  <h1>{site.name}</h1>
+  <p class="bio">
+    I help people <a href="https://rfortherestofus.com/">learn to use R</a> and help organizations{' '}
+    <a href="https://claritydatastudio.com/">communicate more effectively with their data</a>.
+  </p>
+
+  {
+    recent.length > 0 && (
+      <section class="section">
+        <h2>Writing</h2>
+        <PostList posts={recent} dates="short" />
+        {posts.length > recent.length && (
+          <a class="more" href="/writing">
+            All writing &rarr;
+          </a>
+        )}
+      </section>
+    )
+  }
+
+  <section class="section">
+    <h2>Elsewhere</h2>
+    <nav class="links">
+      {site.links.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+  </section>
+</Base>

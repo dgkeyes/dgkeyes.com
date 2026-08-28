@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+import { site } from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Extra class on <main>, e.g. "home", "post" */
+  class?: string;
+  /** Set on post pages so share cards use the article type */
+  article?: { published: Date };
+}
+
+const { title, description = site.description, class: className, article } = Astro.props;
+
+const pageTitle = title ? `${title} · ${site.name}` : site.name;
+// The build writes `about.html` style files, and that leaks into the pathname; canonical URLs are clean.
+const path = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+const canonical = new URL(path, site.url);
+const image = new URL(site.avatar, site.url);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="alternate" type="application/rss+xml" title={`${site.name} · Writing`} href="/rss.xml" />
+
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:type" content={article ? 'article' : 'website'} />
+    <meta property="og:title" content={title ?? site.name} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={image} />
+    {article && <meta property="article:published_time" content={article.published.toISOString()} />}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title ?? site.name} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    {import.meta.env.PROD && <script src="https://cdn.usefathom.com/script.js" data-site={site.fathomSiteId} defer is:inline></script>}
+  </head>
+  <body>
+    <main class={className}>
+      <slot />
+    </main>
+  </body>
+</html>
