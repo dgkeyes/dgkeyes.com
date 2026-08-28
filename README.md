@@ -28,6 +28,6 @@ npm run dev
 
 ## Deployment
 
-Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and uploads `dist/` to the `dgkeyes-com` Cloudflare Pages project. The workflow needs two repository secrets: `CLOUDFLARE_API_TOKEN` (Pages: Edit) and `CLOUDFLARE_ACCOUNT_ID`.
+The site is a Cloudflare Worker (`dgkeyes-com`) that serves `dist/` as static assets; see `wrangler.jsonc`. Cloudflare Workers Builds is connected to this GitHub repo: every push to `main` runs `npm run build` and then `npx wrangler deploy`. Pushes to other branches get preview URLs. `.node-version` pins the Node version used by the build.
 
 `public/_redirects` sends `www.dgkeyes.com` to `dgkeyes.com`.
